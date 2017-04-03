@@ -1,0 +1,47 @@
+<html>
+  <head>
+       <link rel="stylesheet" href="style.css">
+			     <title>Tic tac toe!</title>
+  </head>
+<body>
+<script src="gameWithHistoryAndModule.js"></script>
+<script src="history.js"></script>
+<script src="winner-checkerModule.js"></script>
+  <h1 align="center" style="color:red">Tic tac toe!</h1>
+  <h2 align="center" id="starter">Zaczyna krzyzyk</h2>
+	<table align="center">
+    <tr>
+			<td> <button class="buttonMenu"  onclick="game.newGame()"> Restart gry</button> </td>	
+			<td> <button class="buttonMenu"  onclick="game.changeFirst()">Zmien kolejnosc</button> </td>
+		</tr>
+  </table>
+	<table align="center"  style="border-spacing: 0px;"> 
+		<tr>
+			<td> <button class="button" onclick="game.newMove(0,0)"> <p id =0> </p> </button>  </td>	
+			<td> <button class="button" onclick="game.newMove(0,1)"> <p id =1> </p> </button> </td> 
+			<td> <button class="button" onclick="game.newMove(0,2)"> <p id =2> </p> </button> </td>
+		</tr>
+		<tr>
+			<td> <button class="button" onclick="game.newMove(1,0)"> <p id =10> </p> </button>  </td>	
+			<td> <button class="button" onclick="game.newMove(1,1)"> <p id =11> </p> </button> </td> 
+			<td> <button class="button" onclick="game.newMove(1,2)"> <p id =12> </p>  </button> </td>
+		</tr>
+    	<tr>
+			<td> <button class="button" onclick="game.newMove(2,0)"> <p id =20> </p> </button>  </td>	
+			<td> <button class="button" onclick="game.newMove(2,1)"> <p id =21> </p> </button> </td> 
+			<td> <button class="button" onclick="game.newMove(2,2)"> <p id =22> </p>  </button> </td>
+		</tr>
+	</table>
+<table align="center">
+    <tr>
+			<td> <p>Punkty krzyzyka</p> </td>	<td> <p id="scoreKrzyzyk">0</p></td>
+		</tr>
+		<tr>
+			<td> <p>Punkty kolka</p> </td>	<td> <p id="scoreKolko">0</p></td>
+			</tr>
+			<tr>
+					<td> <p>Remisy</p> </td>	<td> <p id="scoreRemisy">0</p></td>
+			</tr>
+  </table>
+</body>
+</html>
